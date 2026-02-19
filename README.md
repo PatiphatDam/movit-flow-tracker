@@ -1,73 +1,150 @@
-# Welcome to your Lovable project
+Movit App — AI-Assisted UI Prototype
+🔗 Live App Link
 
-## Project info
+👉 https://fluffy-capybara-pjwpjrv4qg45h9679-8080.app.github.dev/
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🧠 Objective
 
-## How can I edit this code?
+The objective of this project is to develop a high-fidelity mobile application interface for the Movit app using AI-Assisted Development.
+The application focuses on movie browsing and discovery.
+No backend was implemented — mock data was used.
 
-There are several ways of editing your application.
+📐 App Scope (The “What”)
 
-**Use Lovable**
+The Movit application includes 4 main screens:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Login Screen
 
-Changes made via Lovable will be committed automatically to this repo.
+Home / Feed Screen
 
-**Use your preferred IDE**
+Movie Detail Screen
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Profile / Settings Screen
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+⭐ Complex Component Included
 
-Follow these steps:
+Horizontal movie carousel
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Card-based layout
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Reusable movie component
 
-# Step 3: Install the necessary dependencies.
-npm i
+Navigation between screens
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🧩 Technology Used
 
-**Edit a file directly in GitHub**
+React Native (Expo)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+JavaScript
 
-**Use GitHub Codespaces**
+Mock JSON Data
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+AI Tools (ChatGPT)
 
-## What technologies are used for this project?
+⚙️ The Process (The “How”)
 
-This project is built with:
+AI tools were used to generate more than 50% of the code, including layouts, styling, and mock data.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+However, the student manually:
 
-## How can I deploy this project?
+Reviewed generated code
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Split large components into reusable files
 
-## Can I connect a custom domain to my Lovable project?
+Fixed layout issues
 
-Yes, you can!
+Adjusted spacing and typography
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Improved accessibility and responsiveness
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Debugged navigation errors
+
+This demonstrates a Human-in-the-Loop process where the student acts as the Architect and AI as the Laborer.
+
+🧱 Phase 1 — Atomic Design (Planning)
+
+Before using AI, the UI was broken down into components:
+
+🔹 Atoms
+
+Buttons
+
+Text fields
+
+Icons
+
+Images
+
+🔹 Molecules
+
+Movie Card
+
+Profile Header
+
+Input Form
+
+Navigation Tabs
+
+🔹 Organisms
+
+Movie Carousel
+
+Feed List
+
+Detail Layout
+
+🤖 Phase 2 — Iterative Prompting
+
+Instead of asking AI for entire screens, smaller components were generated first.
+
+✅ Best Prompt #1
+
+Act as a mobile UI designer.
+Create a reusable MovieCard component in React Native.
+It should display movie poster, title, rating, and release year.
+The card should have rounded corners and a shadow effect.
+Use a dark theme suitable for a movie app.
+
+✅ Best Prompt #2
+
+Create a horizontal carousel using FlatList in React Native.
+Each item should use the MovieCard component.
+Enable smooth scrolling and spacing between cards.
+
+✅ Best Prompt #3
+
+Design a Login Screen for a movie app using React Native.
+Include email and password inputs, a login button, and a modern dark theme layout.
+Ensure it is responsive and centered vertically.
+
+❌ Failed Prompt
+
+Make a full movie app home screen.
+
+❗ Why it failed:
+
+Generated messy code
+
+Too large and unstructured
+
+No reusable components
+
+Hard to maintain
+
+This showed that AI performs better with specific component-level prompts.
+
+🧽 Phase 3 — Human Polish (Manual Refinement)
+
+AI-generated code required manual improvements:
+
+Standardized padding to 16px
+
+Adjusted font sizes for readability
+
+Fixed overflow on small screens
+
+Improved color contrast
+
+Cleaned redundant code
+
+Organized files into proper structure
